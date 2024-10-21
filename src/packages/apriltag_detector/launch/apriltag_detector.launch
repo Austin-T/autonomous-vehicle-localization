@@ -1,0 +1,9 @@
+<launch>
+  <arg name="veh"/>
+  <arg name="map_file" default="hub"/>
+  <group ns="$(arg veh)">
+    <node pkg="apriltag_detector" type="apriltag_detector_node.py" name="apriltag_detector_node" output="screen">
+    </node>
+  </group>
+
+</launch>
